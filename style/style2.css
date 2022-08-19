@@ -1,0 +1,30 @@
+@media only screen and (min-width: 700px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 50px 0 0 100px;
+    }
+
+    body {
+        font-family: 'Raleway', sans-serif;
+        background-color: whitesmoke;
+    }
+
+    #btnLogout {
+        border: none;
+        background-color: #64dd17;
+        border-radius: 5px;
+        align-items: center;
+        width: 100px;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        font-family: 'Raleway', sans-serif;
+        margin: 10px 50px;
+        background-color: whitesmoke;
+    }
+}
