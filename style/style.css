@@ -1,171 +1,104 @@
-@media only screen and (min-width: 700px) {
-    body {
-        font-family: 'Raleway', sans-serif;
-        background-color: whitesmoke;
-    }
-
-    .container {
-        display: flex;
-        justify-content: center;
-        margin: 80px 250px
-    }
-
-    .signup {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border-radius: 10px 0 0 10px;
-        background-color: #64dd17;
-        padding: 5%;
-
-    }
-
-    .signin {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border-radius: 0 10px 10px 0;
-        background-color: lightgrey;
-        padding: 10%;
-        height: 300px;
-
-    }
-
-    .links a {
-        margin: 1%;
-    }
-
-    input {
-        margin: 1%;
-        background-color: white;
-        border: none;
-        height: 40px;
-        width: 350px;
-        border-radius: 5px;
-    }
-
-    .signin .btn {
-        padding: 10px 35px;
-        margin: 1%;
-        width: auto;
-        border-radius: 10px;
-        border: none;
-        background-color: whitesmoke;
-    }
-
-    .signup .btn {
-        padding: 5%;
-        margin: 0 40px;
-        border-radius: 10px;
-        border: none;
-        background-color: whitesmoke;
-    }
-
-    p,
-    h1,
-    .links {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .links a:hover {
-        color: white;
-    }
-
-    .icon-input i {
-        position: absolute;
-        padding: 1%;
-        color: lightslategray;
-    }
-
-    .input {
-        padding-left: 40px;
-    }
+:root {
+    --background-body: whitesmoke;
+    --background-left: #64dd17;
+    --background-right: lightgrey;
+    --background-input: white;
+    --background-btn: whitesmoke;
+    --text-color: black;
+    --color-houver: white;
 }
 
-@media only screen and (max-width: 700px) {
-    body {
-        font-family: 'Raleway', sans-serif;
-        background-color: whitesmoke;
-    }
+.darkmode:root {
+    --background-body: #000a12;
+    --background-left: #1b5e20;
+    --background-right: #000a12;
+    --background-input: lightgray;
+    --background-btn: whitesmoke;
 
-    .signup {
-        border-radius: 10px 10px 0 0;
-        background-color: #76ff03;
-        padding: 5%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+    --text-color: white;
+    --color-houver: limegreen;
+}
 
-    .signin {
-        border-radius: 0 0 10px 10px;
-        background-color: lightgrey;
-        padding: 10%;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--background-body);
+    display: flex;
+    justify-content: center;
+}
 
-    .links a {
-        margin: 1%;
-    }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 150vh;
+    margin: 5%;
+}
 
-    input {
-        margin: 1%;
-        background-color: white;
-        border: none;
-        height: 40px;
-        width: 350px;
-        border-radius: 5px;
-    }
+.signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px 0 0 10px;
+    background-color: var(--background-right);
+    width: 40%;
+    height: 100%;
+    align-items: center;
+}
 
-    .signin .btn {
-        padding: 10px 35px;
-        margin: 1%;
-        width: auto;
-        border-radius: 10px;
-        border: none;
-        background-color: whitesmoke;
-    }
+.signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0 10px 10px 0;
+    background-color: var(--background-left);
+    width: 60%;
+    height: 100%;
+    align-items: center;
+}
 
-    .signup .btn {
-        padding: 2%;
-        margin: 0 150px;
-        border-radius: 10px;
-        border: none;
-        background-color: whitesmoke;
-    }
+.links a {
+    margin: 5px;
+}
 
-    p,
-    h1,
-    .links {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
+form {
+    width: 70%;
+}
 
-    /*.edge {
-        background-color: lightgreen;
-        color: white;
-        padding: 1%;
-        border-radius: 10px;
-        margin: 1%;
-    }*/
+input {
+    background-color: var(--background-input);
+    border: none;
+    height: 5vh;
+    width: 100%;
+    border-radius: 5px;
+}
 
-    .links a:hover {
-        color: white;
-    }
+.signin .btn {
+    padding: 0 5%;
+    margin-top: 5%;
+    width: auto;
+    border-radius: 10px;
+    border: none;
+    background-color: whitesmoke;
+}
 
-    .icon-input i {
-        position: absolute;
-        padding: 3%;
-        color: lightslategray;
-    }
+.signup .btn {
+    padding: 5%;
+    border-radius: 10px;
+    border: none;
+    background-color: whitesmoke;
+}
 
-    .input {
-        padding-left: 40px;
-    }
+p,
+h1,
+.links {
+    text-align: center;
+}
+
+.links a:hover {
+    color: white;
+}
+
+.icon-input i {
+    color: lightslategray;
 }

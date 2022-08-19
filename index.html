@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="darkmode">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, inicial-scale=1.0">
@@ -12,34 +13,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@300&display=swap" rel="stylesheet">
 </head>
-    <body>
-        <div class="container">
-            <div class="signup">
-                <h1>Crie sua conta</h1>
-                <p>Para se conectar conosco, faça o seu registro</p>
-                <button class="btn" id="signup-btn" type="button" onclick="window.location.replace('createAccount.html')">SIGN UP</button>
-            </div>
 
-            <div class="signin">
-                <h1>Bem vindo de Volta!</h1>
-                <div class="links">
-                    <a href="https://www.google.com.br/"><i class="bi bi-google"></i></a>
-                    <a href="https://www.facebook.com.br/"><i class="bi bi-facebook"></i></a>
-                    <a href="https://www.linkedin.com.br/"><i class="bi bi-linkedin"></i></a>
-                </div>
-                <p>ou use seu email:</p>
-                <form class="form">
+<body>
+    <div class="container">
+        <div class="signup">
+            <h1>Crie sua conta</h1>
+            <p>Para se conectar conosco, faça o seu registro</p>
+            <button class="btn" id="signup-btn" type="button"
+                onclick="window.location.replace('createAccount.html')">SIGN UP</button>
+        </div>
+
+        <div class="signin">
+            <h1>Bem vindo de Volta!</h1>
+            <div class="links">
+                <a href="https://www.google.com.br/"><i class="bi bi-google"></i></a>
+                <a href="https://www.facebook.com.br/"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.linkedin.com.br/"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <p>ou use seu email:</p>
+            <form class="form">
+                <label class="label">
                     <div class="icon-input"><i class="bi bi-person-fill"></i></div>
                     <input class="input" type="text" id="name" placeholder="Nome"><br>
+                </label>
+                <label class="label">
+
                     <div class="icon-input"><i class="bi bi-envelope-fill"></i></div>
                     <input class="input" type="email" id="email" placeholder="Email"><br>
+                </label>
+                <label class="label">
                     <div class="icon-input"><i class="bi bi-lock-fill"></i></div>
                     <input class="input" type="password" id="password" placeholder="Senha"><br>
+                </label>
+                <label class="label">
                     <input type="button" class="btn" id="signin-btn" onclick="entrar()" value="SIGN IN">
-                    <!--<button class="btn" id="signin-btn" onclick="entrar()">SIGN IN</button>-->
-                </form>
-            </div>
+                </label>
+            </form>
         </div>
-        <script src="script/script.js"></script>
-    </body>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
 </html>
