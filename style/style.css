@@ -1,6 +1,6 @@
 :root {
-    --background-body: #CFD8DC;
-    --background-left: #51cc0a;
+    --background-body: #b0bec5;
+    --background-left: #4bbd09;
     --background-right: #E0E0E0;
     --background-input: white;
     --background-btn: white;
@@ -157,4 +157,5 @@ form .bi {
 
 #mode.darkmode .switch-btn{
     left: 30px;
+    background-color: #037918;
 }
