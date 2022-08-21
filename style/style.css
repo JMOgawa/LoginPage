@@ -1,29 +1,46 @@
 :root {
-    --background-body: whitesmoke;
-    --background-left: #64dd17;
-    --background-right: lightgrey;
+    --background-body: #CFD8DC;
+    --background-left: #51cc0a;
+    --background-right: #E0E0E0;
     --background-input: white;
-    --background-btn: whitesmoke;
+    --background-btn: white;
     --text-color: black;
-    --color-houver: white;
+    --color-hover: white;
+    --link-color: black;
+    --btn-hover-bg-left: #DCEDC8;
+    --btn-hover-color-left: black;
+    --btn-border-left: 1px solid black;
+    --btn-hover-bg-right: white;
+    --btn-hover-color-right: #00b71a;
+    --btn-border-right: 1px solid #00b71a;
+    --bg-mode: #37474F;
 }
 
-.darkmode:root {
-    --background-body: #000a12;
-    --background-left: #1b5e20;
-    --background-right: #000a12;
-    --background-input: lightgray;
+body.darkmode{
+    --background-body: #37474F;
+    --background-left: #3bb700;
+    --background-right: #546E7A;
+    --background-input: white;
     --background-btn: whitesmoke;
-
     --text-color: white;
-    --color-houver: limegreen;
+    --color-hover: #C6FF00;
+    --link-color: white;
+    --btn-hover-color: #3bb700;
+    --btn-hover-bg-left: black;
+    --btn-hover-color-left: white;
+    --btn-border-left: 1px solid white;
+    --btn-hover-bg-right: black;
+    --btn-hover-color-right: white;
+    --btn-border-right: 1px solid white;
+    --bg-mode: white;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
-    background-color: var(--background-body);
     display: flex;
     justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--background-body);
+    transition: 0.5s;
 }
 
 .container {
@@ -33,72 +50,111 @@ body {
     height: 70vh;
     width: 150vh;
     margin: 5%;
+    color: var(--text-color);
 }
 
 .signup {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 10px 0 0 10px;
-    background-color: var(--background-right);
     width: 40%;
     height: 100%;
     align-items: center;
+    border-radius: 10px 0 0 10px;
+    background-color: var(--background-left);
 }
 
 .signin {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 0 10px 10px 0;
-    background-color: var(--background-left);
     width: 60%;
     height: 100%;
     align-items: center;
+    border-radius: 0 10px 10px 0;
+    background-color: var(--background-right);
 }
 
-.links a {
-    margin: 5px;
+.btn {
+    padding: 10px;
+    align-self: center;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--background-btn);
 }
 
 form {
+    display: flex;
+    flex-direction: column;
     width: 70%;
 }
 
-input {
-    background-color: var(--background-input);
+label {
+    display: flex;
+    align-items: center;
+    margin: 8px;
     border: none;
+    border-radius: 5px;
+    background-color: var(--background-input);
+}
+
+input {
     height: 5vh;
     width: 100%;
+    border: none;
     border-radius: 5px;
+    background-color: var(--background-input);
 }
 
-.signin .btn {
-    padding: 0 5%;
-    margin-top: 5%;
-    width: auto;
-    border-radius: 10px;
-    border: none;
-    background-color: whitesmoke;
+form .bi {
+    padding: 0 5px;
+    color: lightgray;
 }
 
-.signup .btn {
-    padding: 5%;
-    border-radius: 10px;
-    border: none;
-    background-color: whitesmoke;
-}
-
-p,
-h1,
-.links {
-    text-align: center;
+.links a {
+    margin: 10px;
+    color: var(--link-color);
 }
 
 .links a:hover {
-    color: white;
+    color: var(--color-hover);
 }
 
-.icon-input i {
-    color: lightslategray;
+#signup-btn:hover {
+    background-color: var(--btn-hover-bg-left);
+    color: var(--btn-hover-color-left);
+    border: var(--btn-border-left);
+}
+
+#signin-btn:hover {
+    background-color: var(--btn-hover-bg-right);
+    color: var(--btn-hover-color-right);
+    border: var(--btn-border-right);
+}
+
+#mode {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 20px;
+    border-radius: 20px;
+    transition: 0.5s;
+    background-color: var(--bg-mode);
+    cursor: pointer;
+}
+#mode .switch-btn{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transform: scale(0.9);
+    transition: 0.5s;
+    background-color: limegreen;
+}
+
+#mode.darkmode .switch-btn{
+    left: 30px;
 }

@@ -46,6 +46,9 @@ function signup() {
 
 
 //MUDAR O TEMA - DARK MODE
-function darkmode(){
-
+const body = document.querySelector('body')    
+const mode = document.getElementById('mode')
+mode.onclick = function(){
+    mode.classList.toggle('darkmode')
+    body.classList.toggle('darkmode')
 }

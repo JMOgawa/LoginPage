@@ -15,6 +15,9 @@
 </head>
 
 <body>
+    <div id="mode">
+        <div class="switch-btn"></div>
+    </div>
     <div class="container">
         <div class="signup">
             <h1>Crie sua conta</h1>
@@ -33,21 +36,19 @@
             <p>ou use seu email:</p>
             <form class="form">
                 <label class="label">
-                    <div class="icon-input"><i class="bi bi-person-fill"></i></div>
+                    <i class="bi bi-person-fill"></i>
                     <input class="input" type="text" id="name" placeholder="Nome"><br>
                 </label>
                 <label class="label">
-
-                    <div class="icon-input"><i class="bi bi-envelope-fill"></i></div>
+                    <i class="bi bi-envelope-fill"></i>
                     <input class="input" type="email" id="email" placeholder="Email"><br>
                 </label>
                 <label class="label">
-                    <div class="icon-input"><i class="bi bi-lock-fill"></i></div>
+                    <i class="bi bi-lock-fill"></i>
                     <input class="input" type="password" id="password" placeholder="Senha"><br>
                 </label>
-                <label class="label">
-                    <input type="button" class="btn" id="signin-btn" onclick="entrar()" value="SIGN IN">
-                </label>
+                <!--<input type="button" class="btn" id="signin-btn" onclick="entrar()" value="SIGN IN">-->
+                <button class="btn" id="signin-btn" type="button" onclick="entrar()">SIGN IN</button>
             </form>
         </div>
     </div>
