@@ -3,7 +3,8 @@
     --background-left: #4bbd09;
     --background-right: #E0E0E0;
     --background-input: white;
-    --background-btn: white;
+    --background-btn-left: white;
+    --background-btn-right: #4bbd09;
     --text-color: black;
     --color-hover: white;
     --link-color: black;
@@ -20,8 +21,9 @@ body.darkmode{
     --background-body: #37474F;
     --background-left: #3bb700;
     --background-right: #546E7A;
-    --background-input: white;
-    --background-btn: whitesmoke;
+    --background-input: white;    
+    --background-btn-left: white;
+    --background-btn-right: white;
     --text-color: white;
     --color-hover: #C6FF00;
     --link-color: white;

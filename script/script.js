@@ -1,5 +1,6 @@
 const user = { email: "joana@email.com", senha: "1234" };
 
+//localStorage.clear();
 //SIGN IN
 function entrar() {
     var userNome = document.getElementById("name").value
@@ -46,9 +47,9 @@ function signup() {
 
 
 //MUDAR O TEMA - DARK MODE
-const body = document.querySelector('body')    
+const body = document.querySelector('body')
 const mode = document.getElementById('mode')
-mode.onclick = function(){
+mode.onclick = function () {
     mode.classList.toggle('darkmode')
     body.classList.toggle('darkmode')
 }
