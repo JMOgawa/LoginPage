@@ -8,9 +8,9 @@
     --text-color: black;
     --color-hover: white;
     --link-color: black;
-    --btn-hover-bg-left: #DCEDC8;
-    --btn-hover-color-left: black;
-    --btn-border-left: 1px solid black;
+    --btn-hover-bg-left: #4bbd09;
+    --btn-hover-color-left: white;
+    --btn-border-left: 1px solid white;
     --btn-hover-bg-right: white;
     --btn-hover-color-right: #00b71a;
     --btn-border-right: 1px solid #00b71a;
@@ -62,6 +62,7 @@ body {
     width: 40%;
     height: 100%;
     align-items: center;
+    text-align: center;
     border-radius: 10px 0 0 10px;
     background-color: var(--background-left);
 }
@@ -83,7 +84,14 @@ body {
     width: 100px;
     border-radius: 20px;
     border: none;
-    background-color: var(--background-btn);
+}
+
+#signup-btn{
+    background-color: var(--background-btn-left);
+}
+
+#signin-btn{
+    background-color: var(--background-btn-right);
 }
 
 form {
